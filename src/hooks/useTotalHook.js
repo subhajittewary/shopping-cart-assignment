@@ -10,7 +10,7 @@ const useTotalHook = (cartItems) => {
 
       setTotal(calculateTotal(cartItems));
     } else {
-        setTotal(0);
+      setTotal(0);
     }
   }, [cartItems]);
 

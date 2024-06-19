@@ -16,16 +16,18 @@ const addItemToCart = (state, newCartItem) => {
 };
 
 const removeFromCartItems = (state, product) => {
-  const updatedCartItems = state.cartItems.map((item) => {
-    if (product.id === item.id) {
-      if (item.quantity > 1) {
-        return {...item, quantity: item.quantity-1}
-      } else {
-        return null;
+  const updatedCartItems = state.cartItems
+    .map((item) => {
+      if (product.id === item.id) {
+        if (item.quantity > 1) {
+          return { ...item, quantity: item.quantity - 1 };
+        } else {
+          return null;
+        }
       }
-    }
-    return item;
-  }).filter(Boolean);
+      return item;
+    })
+    .filter(Boolean);
   return updatedCartItems || [];
 };
 

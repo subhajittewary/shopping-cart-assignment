@@ -7,10 +7,10 @@ const handleAddToCart = (product, cartItems, dispatch) => {
 };
 
 const handleRemoveFromCart = (product, cartItems, dispatch) => {
-    removeFromCart(dispatch, product);
-  };
+  removeFromCart(dispatch, product);
+};
 
-const shouldDisableCartBtn = (product, cartItems=[]) => {
+const shouldDisableCartBtn = (product, cartItems = []) => {
   let disable = false;
   if (cartItems.length > 0) {
     cartItems?.forEach((cartItem) => {

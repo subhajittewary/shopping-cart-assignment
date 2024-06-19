@@ -7,10 +7,10 @@ export const productListheadings = [
 ];
 
 export const cartListHeadings = [
-    "Product Name",
-    "Max Quantity",
-    "Product Rate",
-    "Image",
-    "Add to Cart",
-    "Remove from Cart"
-  ];
+  "Product Name",
+  "Max Quantity",
+  "Product Rate",
+  "Image",
+  "Add to Cart",
+  "Remove from Cart",
+];

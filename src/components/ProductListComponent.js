@@ -31,7 +31,11 @@ export default function ProductListComponent() {
   return (
     <>
       <CartComponent cartItems={cartItems} />
-      <Table headings={productListheadings} list={productList} renderRow={renderRow} />
+      <Table
+        headings={productListheadings}
+        list={productList}
+        renderRow={renderRow}
+      />
     </>
   );
 }

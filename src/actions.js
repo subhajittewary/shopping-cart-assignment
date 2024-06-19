@@ -8,15 +8,15 @@ const fetchProductList = (dispatch, mockData) => {
 const addToCart = (dispatch, cartItems) => {
   dispatch({
     type: "ADD_TO_CART",
-    payload: cartItems
+    payload: cartItems,
   });
 };
 
 const removeFromCart = (dispatch, cartItems) => {
   dispatch({
     type: "REMOVE_FROM_CART",
-    payload: cartItems
+    payload: cartItems,
   });
 };
 
-export  {fetchProductList, addToCart, removeFromCart};
+export { fetchProductList, addToCart, removeFromCart };

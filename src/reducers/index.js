@@ -4,7 +4,7 @@ import addToCartReducer from "./cartReducer.js";
 
 export const initialState = {
   productList: [],
-  cartItems: []
+  cartItems: [],
 };
 
 const rootReducer = combineReducers({

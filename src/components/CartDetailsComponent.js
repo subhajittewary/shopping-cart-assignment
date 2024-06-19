@@ -12,10 +12,16 @@ export default function CartDetailsComponent({ product, cartItems }) {
         <img src={product?.images[0] || ""} alt={product?.title} />
       </td>
       <td>
-        <button onClick={() => handleAddToCart(product, cartItems, dispatch)}>Add to Cart</button>
+        <button onClick={() => handleAddToCart(product, cartItems, dispatch)}>
+          Add to Cart
+        </button>
       </td>
       <td>
-        <button onClick={() => handleRemoveFromCart(product, cartItems, dispatch)}>Remove from Cart</button>
+        <button
+          onClick={() => handleRemoveFromCart(product, cartItems, dispatch)}
+        >
+          Remove from Cart
+        </button>
       </td>
     </tr>
   );
